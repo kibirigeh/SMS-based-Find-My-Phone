@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="319dp"
+        android:layout_height="64dp"
+        android:layout_weight="0.28"
+        android:background="#FFFFBB33"
+        android:contentDescription="@string/app_name"
+        android:scaleType="center"
+        android:src="@drawable/ic_launcher" />
+
+    <EditText
+        android:id="@+id/NameR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/name"
+        android:inputType="textAutoComplete">
+    </EditText>
+    
+    <EditText
+        android:id="@+id/PhoneR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp"
+        android:hint="@string/number"
+        android:inputType="phone">
+    </EditText>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.57"
+        android:gravity="fill_horizontal" >
+
+        <Button
+            android:id="@+id/cancelD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/addD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="14dp"
+            android:text="ADD" />
+
+    </RelativeLayout>
+
+</LinearLayout>

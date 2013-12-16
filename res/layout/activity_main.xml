@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/HomeScreen"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/DisplayCommands"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/CommandsLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+        
+        <ListView
+            android:id="@+id/ReceipientsList"
+            android:layout_width="fill_parent"
+            android:layout_height="290dp"
+            android:layout_margin="2dip" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/CommandsLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/CommandsLabel">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="40dp"
+            android:text="Add Receiver" 
+            android:onClick="getReceipient"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button1"
+            android:layout_alignBottom="@+id/button1"
+            android:layout_alignParentRight="true"
+            android:text="Remove Receiver" 
+            android:onClick="removeReceipient"/>
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/button2"
+            android:layout_marginTop="27dp"
+            android:text="Add Command" 
+            android:onClick="addCommand"/>
+
+        <ToggleButton
+            android:id="@+id/toggleButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button4"
+            android:layout_alignBottom="@+id/button4"
+            android:layout_toLeftOf="@+id/button2"
+            android:text="ToggleButton" 
+            android:onClick="toggleApp"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/toggleButton1"
+            android:text="Exit" 
+            android:onClick="exit"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
